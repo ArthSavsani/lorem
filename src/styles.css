@@ -1,0 +1,151 @@
+body {
+  background: #f4f4f4;
+}
+.App {
+  font-family: "Times New Roman", Times, sans-serif;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.links {
+  text-align: center;
+  font-size: 10px;
+}
+.active {
+  text-decoration: line-through #ff4d4d;
+}
+ul {
+  text-align: left;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  margin: 30px auto 35px auto;
+  cursor: pointer;
+}
+.submit {
+  margin: 20px 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.child1 {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 50% 30%;
+  column-gap: 50px;
+  margin-bottom: 60px;
+}
+.heading {
+  font-size: 56px;
+  font-weight: bold;
+  /*border: 2px solid red;*/
+  padding: 20px;
+}
+.description {
+  /*border: 2px solid blue;*/
+  padding: 15px;
+  line-height: 1.5;
+}
+hr {
+  border-top: 2px solid red;
+  width: 20%;
+  margin-left: 2px;
+  margin-top: 17px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap !important;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.card p {
+  margin-top: 45px;
+  font-size: 15px;
+  font-weight: bold;
+}
+img {
+  border-radius: 50%;
+  max-width: 120px;
+  margin: -10px;
+  height: 120px;
+}
+.navbar {
+  visibility: hidden !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+}
+.description1 {
+  visibility: hidden;
+}
+@media only screen and (max-width: 720px) {
+  .sidebar {
+    display: none;
+  }
+  .navbar {
+    visibility: visible !important;
+  }
+  .description {
+    display: none;
+  }
+  .child1 {
+    grid-template-columns: 100%;
+    padding: 30px;
+    display: grid;
+    width: 370%;
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .row {
+    width: 500%;
+  }
+  .column {
+    display: grid;
+    width: 45%;
+    grid-template-columns: repeat(1, 1fr 2fr) !important;
+  }
+  .description1 {
+    font-size: 20px;
+    margin-top: 15px;
+    visibility: visible;
+  }
+  .navbar {
+    font-size: 30px;
+  }
+  .lorem {
+    font-weight: bold;
+  }
+  .icon,
+  .cart {
+    color: #ff4d4d;
+  }
+}
